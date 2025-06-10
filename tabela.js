@@ -62,5 +62,6 @@ function atualizarProduto() {
 
 function removerProduto(index) {
     const produto = produtos[index]
-    alert(`Produto selecionado: ${produto.descricao}`)
+    produtos.splice(index, 1)
+    renderizarTabela()
 }
