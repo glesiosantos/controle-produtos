@@ -15,8 +15,8 @@ function renderizarTabela() {
             <td>${p.descricao}</td>
             <td>R$ ${p.preco.toFixed(2)}</td>
             <td>
-                <button onclick="editarProduto(${index})">Editar</button>
-                <button onclick="removerProduto(${index})">Remover</button>
+                <button onclick="editarProduto(${index})" class="btn btn-md bg-warning">Editar</button>
+                <button onclick="removerProduto(${index})" class="btn btn-md bg-danger text-light">Remover</button>
             </td>
         </tr>
     `)
